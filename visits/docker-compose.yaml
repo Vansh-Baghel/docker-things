@@ -1,0 +1,9 @@
+version: "3.8"
+# services are like a container
+services:
+  redis-server:
+    image: "redis"
+  node-app:
+    build: .
+    ports:
+      - "5000:8000"
